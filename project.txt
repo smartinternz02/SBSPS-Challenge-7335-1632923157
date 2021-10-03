@@ -1,0 +1,34 @@
+Map -> Exact location - Calculating Distance from Donors -  Geocoding API - Reform Maps API.
+Security -> Authentication Mechanism - notification to mail.
+Navigation -> Directions 
+Blood Donors - Patient Blood - Compatible Blood Groups
+Chatbot
+Transactions Track - Tracking Contact between Donors and Receptors
+UserID - Authentication - Government ID.
+Login Page 
+Payment Portal
+
+
+Working of Application:
+
+1. Homepage - User enters a query - GET(location, grp) to localhost:8080 for index.js.
+2. Index.js - Retrieves results from database - Formats results in HTML format by appending tags
+3. Index.js - Redirects to Result page. - Sends Formatted results to result page.
+4. result.html - On clicking a donor profile, user will be redirected to details.html
+5. details.html - Using donor profile - index.js will generate coordinates for his location.
+6. index.js - Sends coordinates to details.html
+7. details.html - Generates a map instance for the coordinates received.
+
+8. Registration.html - User enters details (location, contact ,name , bgrp etc.) 
+	- POST request to index.js
+9. index.js - uses POST request user details - Creates a Database Entry - Inserts values in to the table.
+
+10. News Page : On clicking News tab - Get request is generated to index.js
+11. index.js - sends news page.
+
+12. About page: on clicking about tab - get request is generated to index.js
+13. index.js - sends about page.
+
+About, news static pages. 
+
+index.html, result.html, details.html dynamic.
